@@ -98,16 +98,35 @@ nav .container {
     height: 45px;
 }
 
-.nav-links {
-    display: none;
-    /* Mobile first: hide desktop menu */
-}
-
-/* Mobile Nav Toggle - Simple version */
+/* Mobile Nav Toggle */
 .nav-toggle {
     display: block;
     cursor: pointer;
     font-size: 1.5rem;
+    color: var(--primary);
+}
+
+/* Mobile Nav Links Hidden by Default */
+.nav-links {
+    display: none;
+    list-style: none;
+}
+
+.nav-links.active-mobile {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-light);
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.nav-links.active-mobile li {
+    margin: 10px 0;
 }
 
 /* Buttons */
