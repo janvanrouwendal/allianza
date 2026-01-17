@@ -1,0 +1,16 @@
+{
+    "name": "Allianza Bureau voor Interim-management",
+    "short_name": "Allianza",
+    "description": "Uw partner voor krachtig interim-management en organisatieadvies in de zorg.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#F9F5F1",
+    "theme_color": "#A64B2A",
+    "icons": [
+        {
+            "src": "public/assets/images/logo-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

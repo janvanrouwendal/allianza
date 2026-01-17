@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allianza | Interim-management & Organisatieadvies in de Zorg</title>
+    <meta name="description"
+        content="Allianza: Uw partner voor krachtig interim-management en organisatieadvies in de zorgsector. Onder leiding van Alice van der Kamp leveren wij resultaatgerichte professionals.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#A64B2A">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="public/assets/images/logo-icon.png" alt="Allianza Logo">
+                <span
+                    style="font-family: var(--font-heading); font-weight: 700; font-size: 1.5rem; color: var(--primary); margin-left: 10px; vertical-align: middle;">Allianza</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="over-ons.html">Over Ons</a></li>
+                <li><a href="expertise.html">Expertise</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="contact.html" class="btn-cta" style="color: var(--white);">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero"
+        style="background: linear-gradient(rgba(249, 245, 241, 0.9), rgba(249, 245, 241, 0.9)), url('public/assets/images/agency-office.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>De kracht van Allianza: Uw partner in interim-management.</h1>
+                    <p style="font-size: 1.25rem; color: var(--text-main); margin-bottom: 2rem;">
+                        Wij lossen complexe zorgvraagstukken op met resultaatgerichte interim-managers en strategisch
+                        advies.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="diensten.html" class="btn-cta">Wat wij doen</a>
+                        <a href="contact.html" class="btn-secondary" style="margin-left: 10px;">Vrijblijvend gesprek</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="public/assets/images/team-healthcare.png" alt="Allianza Agency Team"
+                        style="border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaser Section -->
+    <section class="teaser" style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Krachtige verbinding in de zorg</h2>
+                <p>Allianza is gespecialiseerd in het leveren van rust, structuur en resultaat in uitdagende
+                    zorgomgevingen (GGZ, VVT en Sociaal Domein).</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>Onze Missie</h3>
+                    <p>Mensen en teams in hun kracht zetten om vanuit verbinding duurzame verandering te realiseren.</p>
+                    <a href="over-ons.html" style="color: var(--primary); font-weight: 600; text-decoration: none;">Lees
+                        meer over ons &rarr;</a>
+                </div>
+                <div class="expertise-card">
+                    <h3>Onze Aanpak</h3>
+                    <p>Wij combineren strategisch inzicht met operationele slagkracht. Resultaatgericht en menselijk.
+                    </p>
+                    <a href="expertise.html"
+                        style="color: var(--primary); font-weight: 600; text-decoration: none;">Onze expertise
+                        &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="public/assets/images/logo-text.png" alt="Allianza">
+                    <p style="color: var(--text-muted); margin-top: 15px;">Strategisch interim-management bureau voor de
+                        zorgsector.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigatie</h4>
+                    <ul>
+                        <li><a href="over-ons.html">Over Ons</a></li>
+                        <li><a href="expertise.html">Expertise</a></li>
+                        <li><a href="diensten.html">Diensten</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Direct Contact</h4>
+                    <ul>
+                        <li><a href="mailto:info@allianza.nl">info@allianza.nl</a></li>
+                        <li><a href="tel:0612310353">06 - 123 10 353</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Allianza Bureau voor Interim-management.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="index.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
