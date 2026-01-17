@@ -1,0 +1,22 @@
+{
+  "name": "Allianza",
+  "short_name": "Allianza",
+  "description": "Professionele mediation, operationele coaching en schuldhulpverlening.",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8B0000",
+  "icons": [
+    {
+      "src": "public/assets/images/logo-icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/assets/images/logo-full.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
