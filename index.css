@@ -132,7 +132,7 @@ nav .container {
 /* Buttons */
 .btn-cta {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 10px 24px;
     background-color: var(--primary);
     color: var(--white);
     text-decoration: none;
