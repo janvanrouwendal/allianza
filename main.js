@@ -52,24 +52,5 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // 4. Contact Form Handler (Mock)
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = 'Verzenden...';
-            btn.disabled = true;
 
-            setTimeout(() => {
-                btn.innerText = 'Bericht verzonden!';
-                contactForm.reset();
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.disabled = false;
-                }, 3000);
-            }, 1500);
-        });
-    }
 });
